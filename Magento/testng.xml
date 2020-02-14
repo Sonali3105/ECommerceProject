@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Magento Test Suite">
+	
+	<test name="Product_Sort_By_Name" allow-return-values="true">
+		<classes>
+			<class name="com.qa.guru.TestCases.MobilePageTest">
+			<methods>
+			<include name="verifyProductSortedByName"></include>
+			</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Product_Value_Equal" allow-return-values="true">
+		<classes>
+			<class name="com.qa.guru.TestCases.SonyMobileDetailsTest">
+			<methods>
+			<include name="verifySonyMobileValue"></include>
+			</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Product_Cannot_Add_More" allow-return-values="true">
+		<classes>
+			<class name="com.qa.guru.TestCases.ShoppingCartTest">
+			<methods>
+			<include name="verifyPrdctQty"></include>
+			</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Product_Compare" allow-return-values="true">
+		<classes>
+			<class name="com.qa.guru.TestCases.MobilePageTest">
+			<methods>
+			<include name="verifyAddToCompareFunctionality"></include>
+			</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Share_Wishlist" allow-return-values="true">
+		<classes>
+			<class name="com.qa.guru.TestCases.shareWishListPageTest">
+			<methods>
+			<include name="VerifyShareWishListFunctionality"></include>
+			</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Order_Place" allow-return-values="true">
+		<classes>
+			<class name="com.qa.guru.TestCases.CheckoutPageTest">
+			<methods>
+			<include name="verifyOrderIsPlaced"></include>
+			</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Print_Order" allow-return-values="true">
+		<classes>
+			<class name="com.qa.guru.TestCases.MyOrdersPageTest">
+			<methods>
+			<include name="verifyPrintPreviouslyOrder"></include>
+			</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="ReOrder_Product" allow-return-values="true">
+		<classes>
+			<class name="com.qa.guru.TestCases.CheckoutPageTest">
+			<methods>
+			<include name="verifyReOrderProduct"></include>
+			</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Discount_Coupon" allow-return-values="true">
+		<classes>
+			<class name="com.qa.guru.TestCases.ShoppingCartTest">
+			<methods>
+			<include name="verifyDiscountCouponfunctionality"></include>
+			</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Export_Order_In_PDF" allow-return-values="true">
+		<classes>
+			<class name="com.qa.guru.TestCases.ExportOrdersBackendFunctionsTest">
+			</class>
+		</classes>
+	</test>
+	
+	
+</suite>
